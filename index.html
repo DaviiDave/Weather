@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css">
+    <title>Clique Weather Tool</title>
+</head>
+<body>
+
+    <div class="container my-5 mx-auto">
+
+        <h1 class="text-muted text-center my-4">Clique Weather Tool...</h1>
+
+        <form class="change-location my-4 text-center text-muted">
+            <label for="city">Enter Desired City For Weather Info</label>
+            <input type="text" name="city" class="form-control p-3" placeholder="Enter a location...">
+        </form>
+
+        <div class="card shadow-lg rounded d-none">
+            <img src="https://placehold.co/400x300" class="time card-img-top">
+            <div class="icon bg-light mx-auto text-center">
+                <img src="" alt="">
+            </div>
+            <div class="text-muted text-uppercase text-center details">
+                <h5 class="my-3">City Name</h5>
+                <div class="my-3 fst-italic">Weather Condition</div>
+                <div class="display-4 my-4">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
