@@ -29,7 +29,7 @@ const updateUI = (data) => {
      const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
      icon.setAttribute('src', iconSrc);
 
-    let timeSrc = weather.isDayTime ? 'img/night.svg' : 'img/day.svg';
+    let timeSrc = weather.isDayTime ? 'img/day.svg' : 'img/night.svg';
 
      time.setAttribute('src', timeSrc);
 
@@ -65,5 +65,6 @@ cityForm.addEventListener('submit', e => {
  .then(data => updateUI(data))
  .catch(err => console.log(err)); 
 });
+
 
 
